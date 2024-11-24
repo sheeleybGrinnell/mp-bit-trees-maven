@@ -4,13 +4,13 @@ A mini-project exploring bit trees (a form of binary tree) and their use in tran
 
 **Authors**
 
-* Your name here
+* Benjamin Sheeley
 * Samuel A. Rebelsky (starter code)
 
 **Acknowledgements**
 
-*
-*
+* Samuel Rebelsky
+* Grinnell College CSC-207 Mentors
 *
 
 **Instructions for use**
