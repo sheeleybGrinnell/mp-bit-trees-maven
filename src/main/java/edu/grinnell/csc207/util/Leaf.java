@@ -1,5 +1,9 @@
 package edu.grinnell.csc207.util;
 
-public class Leaf extends Node {
-  
+public class Leaf {
+  private String character;
+
+  public String getCharacter() {
+    return character;
+  }
 }
