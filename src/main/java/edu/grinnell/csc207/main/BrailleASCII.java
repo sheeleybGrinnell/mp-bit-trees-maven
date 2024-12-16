@@ -17,14 +17,16 @@ public class BrailleASCII {
   public static void main(String[] args) {
     PrintWriter pen = new PrintWriter(System.out, true);
     if (args[0] == "braille") {
-      char[] brailleArray = args[1].toCharArray();
-      for (int i = 0; i < brailleArray.length; i++) {
-        pen.print(BrailleAsciiTables.toBraille(brailleArray[i]));
-      }
+        char[] brailleArray = args[1].toCharArray();
+        for (int i = 0; i < brailleArray.length; i++) {
+          pen.print(BrailleAsciiTables.toBraille(brailleArray[i]));
+        }
     } else if (args[0] == "unicode") {
       char[] unicodeArray = args[1].toCharArray();
+      String[] brailleArray = new String[unicodeArray.length];
       for (int i = 0; i < unicodeArray.length; i++) {
-        
+        brailleArray[i] = BrailleAsciiTables.toBraille(unicodeArray[i]);
+        pen.print(BrailleAsciiTables.toUnicode(brailleArray[i]));
       }
     } else if (args[0] == "ascii") {
       char[] asciiArray = args[1].toCharArray();
