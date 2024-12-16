@@ -22,12 +22,25 @@ public class BrailleASCII {
         pen.print(BrailleAsciiTables.toBraille(brailleArray[i]));
       }
     } else if (args[0] == "unicode") {
-
+      char[] unicodeArray = args[1].toCharArray();
+      for (int i = 0; i < unicodeArray.length; i++) {
+        
+      }
     } else if (args[0] == "ascii") {
-
+      char[] asciiArray = args[1].toCharArray();
+      String buffer = "";
+      for (int i = 0; i < asciiArray.length; i++) {
+        if (!((i % 6) == 0)) {
+          buffer += asciiArray[i];
+        } else {
+          BrailleAsciiTables.toAscii(buffer);
+          buffer = "";
+          buffer += asciiArray[i];
+        } //if/else
+      } //for
     } else {
       pen.println("Invalid translation tool");
-    }
+    } //if/else
     pen.close();
   } // main(String[]
 
