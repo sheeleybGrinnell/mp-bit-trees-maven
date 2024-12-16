@@ -67,7 +67,6 @@ public class BATableExperiments {
             + e.getMessage());
       } // try/catch
     } // for
-    
     pen.close();
   } // main(String[])
 

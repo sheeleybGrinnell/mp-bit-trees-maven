@@ -15,8 +15,8 @@ A mini-project exploring bit trees (a form of binary tree) and their use in tran
 
 **Instructions for use**
 
-_Please insert instructions here._
+Run the main class in BrailleASCII.java. You can then give two string parameters. The first is the target char set (braille, ascii, or unicode) and the second is the string to translate.
 
 ---
 
-This code may be found at <https://github.com/USERNAME/mp-bit-trees-maven>. The original code may be found at <https://github.com/Grinnell-CSC207/mp-bit-trees-maven>.
+This code may be found at <https://github.com/sheeleybGrinnell/mp-bit-trees-maven>. The original code may be found at <https://github.com/Grinnell-CSC207/mp-bit-trees-maven>.
